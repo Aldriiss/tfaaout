@@ -1,0 +1,27 @@
+.intro{
+
+  .title{
+    margin-bottom: 32px;
+    margin-top: 64px;
+  }
+
+  &__image{
+  width: 100%;
+  border-radius: 60px;
+  }
+
+  .h3{
+    margin-top: 72px;
+  }
+}
+
+.bienvenue{
+  margin-top: 128px;
+  margin-bottom: 128px;
+
+  
+}
+.important{
+  font-size: calc($size-text + 2px);
+  font-weight: normal;
+}
