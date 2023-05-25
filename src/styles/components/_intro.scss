@@ -1,13 +1,19 @@
 .intro{
-
+  margin-right: 0;
+  margin-left: 0;
   .title{
     margin-bottom: 32px;
     margin-top: 64px;
+    color: $c-bg;
   }
 
   &__image{
-  width: 100%;
-  border-radius: 60px;
+    filter:contrast(0.8);
+    position: absolute;
+    top: 90px;
+    z-index: -1;
+    width: 100%;
+    border-radius: 60px;
   }
 
   .h3{
