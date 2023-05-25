@@ -1,3 +1,18 @@
-.recherches{
 
+.article{
+    width: 400px;
+    text-align: center;
+
+    &__txt{
+        text-align: left;
+    }
+    &__image{
+    border-radius: 40px;
+    object-fit: cover;
+    object-position: 0 -205px;
+    width: 300px;
+    height: 200px;
+    }
 }
+
+
