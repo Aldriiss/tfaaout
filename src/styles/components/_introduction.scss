@@ -1,0 +1,72 @@
+.article {
+    margin-top: 64px;
+    max-width: 600px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+
+    p {
+        margin-left: 16px;
+    }
+
+    &__txt {
+        text-align: left;
+    }
+
+    &__image {
+        border-radius: 40px;
+        object-fit: cover;
+        width: 80vw;
+        height: calc(80vw / 3 * 2);
+        max-width: 300px;
+        max-height: calc(300px / 3 * 2);
+        margin: 0 auto;
+    }
+
+    &__decoration {
+        display: none;
+    }
+
+}
+
+.repas {
+    background: url(../../assets/images/repas_1280.jpg);
+    background-position-x: 0px;
+}
+
+.harmonie {
+    background: url(../../assets/images/repas_sain.jpg);
+    background-position-x: -90px;
+}
+
+
+
+//tablette
+@media screen and (min-width:720px) {
+    .article {
+
+        &__flex {
+            display: flex;
+            justify-content: center;
+        }
+
+
+
+        &__decoration {
+            margin-top: 64px;
+            margin-bottom: 20px;
+            display: block;
+            width: 220px;
+            background-size: cover;
+            background-repeat: no-repeat
+        }
+    }
+}
+
+//Desktop
+@media screen and (min-width:1080px) {
+
+    .article:nth-child(odd) {
+        margin-left: 20%;
+    }
+}

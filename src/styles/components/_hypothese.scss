@@ -1,0 +1,36 @@
+.hypothese {
+
+    .planning {
+        &__img {
+            width: 80vw;
+            max-width: 400px;
+            height: 100%;
+        }
+
+
+    }
+}
+
+.fonction__title {
+    margin-top: 64px;
+}
+
+//tablette
+@media screen and (max-width:720px) {}
+
+//Desktop
+@media screen and (min-width:1080px) {
+    .flex {
+        display: flex;
+    }
+
+    .planning {
+        &__img {
+            margin-right: 64px;
+        }
+
+        &__creation {
+            margin-left: 64px;
+        }
+    }
+}

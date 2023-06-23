@@ -1,0 +1,39 @@
+.premisse {
+  .title {
+    margin-bottom: 32px;
+    margin-top: 64px;
+    color: $c-alt;
+  }
+
+  &__image {
+    filter: contrast(0.8);
+    width: 100%;
+    max-width: 400px;
+  }
+}
+
+//Desktop
+@media screen and (min-width:1080px) {
+  .premisse {
+    margin-top: 88px;
+    margin-bottom: 88px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, fit-content);
+
+    .title {
+      margin-bottom: 32px;
+      margin-top: 0;
+    }
+
+    &__image {
+      grid-area: 1 / 2 / 3 / 3;
+      justify-self: center;
+    }
+  }
+}
+
+.bienvenue {
+  margin-top: 128px;
+  margin-bottom: 128px;
+}

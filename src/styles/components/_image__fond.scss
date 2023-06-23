@@ -1,0 +1,12 @@
+body {
+
+    //tablette
+    @media screen and (min-width:720px) and (max-width:1080px) {
+        background-size: 60% auto;
+    }
+
+    //Desktop
+    @media screen and (min-width:1080px) {
+        background-size: 40% auto;
+    }
+}

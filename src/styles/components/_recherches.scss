@@ -1,26 +1,81 @@
-.article{
-    margin-top: 64px;
-    max-width: 400px;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+.recherches {
 
-    p{
-        margin-left: 16px;
+    &__logo {
+        height: auto;
+        max-height: 150px;
+        max-width: 30%;
+        width: auto;
     }
 
-    &__txt{
-        text-align: left;
+    h3 {
+        color: $c-dyna;
     }
-    &__image{
-    border-radius: 40px;
-    object-fit: cover;
-    width: 80vw;
-    height:  calc(80vw / 3 * 2);
-    max-width: 300px;
-    max-height: calc(300px / 3 * 2);
-    margin: 0 auto;
+
+    &__block {
+        margin-top: 64px;
+        max-width: 444px;
+        box-shadow: rgba(0, 0, 0, 0.2) 4px 4px 4px;
+        border-radius: 24px;
+        padding: 64px 24px 32px 24px;
+        background-color: $c-bg;
+
+        span {
+            display: block;
+            border-bottom: 3px solid $c-alt;
+        }
     }
+
+    .espace {
+        margin-top: 64px;
+    }
+
+    .selectionner {
+        box-shadow: rgba(117, 13, 55, 0.4) 4px 4px 4px;
+
+        h3 {
+            color: $c-alt;
+        }
+
+        .recherches__numero {
+            color: $c-alt;
+        }
+    }
+
+    &__numero {
+        font-size: 15rem;
+        font-weight: bolder;
+        z-index: 0;
+        opacity: 0.05;
+        position: absolute;
+        display: block;
+        line-height: 120px;
+
+
+    }
+
+    &__texte {
+        position: relative;
+        z-index: 30;
+
+        h3 {
+            margin: 56px 0;
+        }
+    }
+
 }
 
+//tablette
+//@media screen and (min-width:720px) and (max-width:1080px) {}
 
+//Desktop
+@media screen and (min-width:1080px) {
+    .recherches {
+        .hypothese__exemple {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-column-gap: 24px;
+            grid-row-gap: 24px;
+        }
+    }
+}
