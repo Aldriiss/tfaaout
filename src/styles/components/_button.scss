@@ -1,18 +1,17 @@
 .button {
     padding: 16px 32px;
-    background-color: $c-alt;
-    color: white;
+    background-color: $c-text;
+    color: $c-other;
     border-radius: 24px;
     cursor: pointer;
+    box-shadow: inset 0px -1px 1px 1px $c-other;
 
     &:hover,
     &:active,
     &:focus {
-        background-color: $c-bg;
-        color: $c-alt;
-        box-shadow: inset 0px 0px 0px 3px $c-alt;
+        color: $c-btn;
+        box-shadow: inset 0px -1px 1px 1px $c-btn;
     }
-
 }
 
 

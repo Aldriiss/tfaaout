@@ -1,0 +1,107 @@
+:root {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: lighter;
+  font-size: var(--size-text);
+  line-height: var(--line-height);
+  color: $c-text;
+  background-color: $c-bg;
+  margin: 0;
+  background-image: url(../../assets/images/ustencils-fond.svg);
+  background-size: 80% auto;
+  background-position: center center;
+}
+
+main {
+  max-width: 1480px;
+}
+
+//h1
+.title {
+  font-size: var(--size-tittle-h1);
+}
+
+//h2
+.subtitle {
+  font-size: var(--size-tittle-h2);
+  font-weight: 400;
+  color: $c-dyna;
+}
+
+//h3
+.h3 {
+  color: $c-dyna;
+  font-size: var(--size-tittle-h3);
+  margin-top: 72px;
+}
+
+//h4
+.h4 {
+  font-size: var(--size-tittle-h4);
+}
+
+img {
+  border-radius: 24px;
+}
+
+//ecriture en couleur
+.red {
+  color: $c-other;
+}
+
+.color--alt {
+  color: $c-dyna;
+}
+
+//style lien
+.lien {
+  text-decoration: none;
+  color: $c-bg;
+}
+
+.texte__lien {
+  display: inline-block;
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: $c-dyna;
+    transition: width 0.3s ease-in-out;
+  }
+
+  &:hover::after {
+    width: 0;
+  }
+
+  &:hover {
+    color: $c-dyna;
+  }
+}
+
+.avant {
+  color: $c-other;
+}
+
+.section {
+  padding-left: 64px;
+  padding-right: 64px;
+  padding-top: 24px;
+}
+
+p {
+  max-width: 64ch;
+}
+
+.important {
+  font-size: calc(var(--size-text) + 2px);
+  font-weight: normal;
+}

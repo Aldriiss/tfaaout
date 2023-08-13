@@ -1,5 +1,5 @@
 .footer {
-    background-color: $c-alt;
+    background-color: $c-dyna;
     height: fit-content;
     width: 100%;
     position: absolute;
@@ -33,7 +33,7 @@
             display: block;
             width: 100%;
             height: 3px;
-            background-color: $c-alt;
+            background-color: $c-dyna;
             transition: all 0.5s ease-in-out;
         }
 
@@ -42,12 +42,17 @@
         }
 
         &:hover {
-            color: $c-alt;
+            color: $c-dyna;
             background-color: $c-bg;
             transition: all 0.5s ease-in-out;
         }
     }
 
+}
+
+.ancre--top {
+    position: absolute;
+    top: 0;
 }
 
 //tablette

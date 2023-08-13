@@ -42,11 +42,11 @@
 
 <body class="body">
   <header class="header">
-    <nav class="nav" id="top">
+    <nav class="nav">
       <div class="nav__size">
         <ul class="nav__icones">
           <li class="icones__el"><a class="nav__logo" href="index.html"><img class="nav__img"
-                src="assets/images/1x/logo-blanc.png" alt="logo TC casserole et spatule design"></a></li>
+                src="assets/images/1x/logo-p.png" alt="logo TC casserole et spatule design"></a></li>
           <li class="icones__el">
             <div class="burger"><span></span></div>
           </li>
@@ -61,22 +61,21 @@
     </nav>
   </header>
   <main>
-    <section class="section premisse" id="premisse">
+    <span class="ancre--top" id="top"></span>
+    <section class="premisse section" id="premisse">
       <h1 class="title">TFA - TCook</h1>
-      <img class="premisse__image" alt="femme cuisinant plaque cuissont fumée tshirt noir blonde"
-        src="assets/images/intro-desktop.jpg" srcset="assets/images/intro-mobil.jpg 0.5x,
-                  assets/images/intro-desktop.jpg 1x,
-                  assets/images/intro.jpg 2x">
       <div class="premisse__text">
-        <h2 class="subtitle">Du constat à l'application</h2>
+        <div class="bgColor">
+          <h2 class="subtitle">Du constat à l'application</h2>
+        </div>
         <p>En tant qu’étudiants nous avons pour la plupart des problèmes pour cuisiner, je me suis souvent retrouvé
           devant le même problème que d’autres: le manque de temps pour préparer des repas élaborés.</p>
-
-        <h3 class="h3">Avant toutes choses désirez vous en apprendre plus sur moi ?</h3>
-        <a class="button" href="https://adrien-vandenbussche-dwt.be/projets/">Mes projets</a>
       </div>
     </section>
-
+    <section class="section projets">
+      <h3 class="h3 avant">Avant toutes choses désirez vous en apprendre plus sur moi ?</h3>
+      <a class="button" href="https://adrien-vandenbussche-dwt.be/projets/">Mes projets</a>
+    </section>
     <section class="section bienvenue">
       <h3 class="h3 color--alt">Suivez au fil de ce site le parcours pour en arriver à ma solution dont je suis fier.
       </h3>
@@ -101,57 +100,35 @@
         partager ma démarche et mon cheminement au sein de cette expérience captivante axée sur la cuisine et le temps.
       </p>
 
-      <article class="article">
+      <article class="article article__bg">
         <img class="article__image" src="assets/images/compressjpeg/ecran-post-it-min.jpg"
           alt="Ordinateur portable bureau travail">
         <div class="article__txt">
-          <h3>a. Présentation du projet</h3>
+          <h3 class="h3">Présentation du projet</h3>
           <p class="important">Mon TFA est le résultat de cette première année dans l’option Web. L'objectif de ce
             projet est de développer notre démarche à trouver des idées et à construire un projet de A à Z.</p>
           <p>Mon aventure avec TCOOK a commencé dans le cadre de mon cursus scolaire. J'ai choisi de me concentrer sur
             le domaine de la cuisine et de l'aide culinaire, en mettant particulièrement l'accent sur la gestion du
             temps.</p>
         </div>
-
-        <img class="article article__image" src="assets/images/heure-cuisine.jpg" alt="fille stress cuisine">
         <div class="article__txt">
-          <p>Dans ce projet la notion de temps est essentielle pour moi, étant étudiant mes envies de cuisiner
-            dépendent
-            de mon humeur du moment, de mes idées, du temps que j’ai envie d’investir dans la cuisine.
-            <br><br>
-            C’est donc pour cela que j’ai en tête une application permettant à la fois de connaître précisément le
-            temps
-            que nous allons passer dans la cuisine mais également proposer des idées en fonction de vos envies en
-            quelques clics.
+          <p class="decalage">
+            Dans ce projet <span class="important">la notion de temps est essentielle pour moi</span>, étant étudiant
+            mes envies de cuisiner dépendent de mon humeur du moment, de mes idées, du temps que j’ai envie d’investir
+            dans la cuisine.
+          </p>
+          <p>
+            C’est donc pour cela que j’ai en tête une application permettant à la fois de <span
+              class="important">connaître précisément le temps que nous allons passer en cuisine</span> mais également
+            proposer des idées en fonction de vos envies en quelques clics.
           </p>
         </div>
       </article>
-      <div class="article__flex">
-        <article class="article">
-          <img class="article__image" src="assets/images/compressjpeg/bureau-maison-min.jpg"
-            alt="Ordinateur portable bureau travail">
-          <div class="article__txt">
-            <h3>b. Contexte et enjeux</h3>
-            <p class="important">Le contexte actuel est marqué par une évolution des modes de vie, caractérisée par
-              une
-              accélération du rythme de vie. </p>
-            <p>De ce fait, de nombreuses personnes ont peu de temps pour cuisiner des repas sains et équilibrés. Cette
-              situation a des conséquences négatives sur la santé. elle peut augmenter le risque de maladies
-              chroniques
-              telles que l'obésité, le diabète ou les maladies cardiovasculaires.
-              Le développement d'une telle application axée sur le gain de temps répond à un enjeu de santé publique
-              en
-              encourageant les utilisateurs à adopter une alimentation saine et équilibrée tout en optimisant leur
-              temps.
-            </p>
-          </div>
-        </article>
-      </div>
       <article class="article">
         <img class="article__image" src="assets/images/compressjpeg/class-tableau-min.jpg"
           alt="Ordinateur portable bureau travail">
         <div class="article__txt">
-          <h3>c. Problématique et questionnement</h3>
+          <h3 class="h3">Problématique et questionnement</h3>
           <p class="important">La réelle problématique qui est ressortie de toutes <a
               href="https://docs.google.com/spreadsheets/d/1Yh9_n5c5PqoOz-56mi_o2c4cQPzqv0ZEgaL-ehS4Fpc/edit?usp=sharing"
               class="texte__lien">mes interviews</a> c’est la gestion du temps et son utilisation.</p>
@@ -192,7 +169,7 @@
         <img class="article__image" src="assets/images/compressjpeg/ecran-post-it-min.jpg"
           alt="Ordinateur portable bureau travail">
         <div class="article__txt">
-          <h3>a. L'idée de TCook</h3>
+          <h3 class="h3">a. L'idée de TCook</h3>
           <p class="important">
             C'est ainsi que l'idée de TCook a pris forme dans mon esprit.</p>
           <p>
@@ -211,7 +188,7 @@
           <img class="article__image" src="assets/images/compressjpeg/maquette-figma-ecole-min.jpg"
             alt="Ordinateur portable bureau travail">
           <div class="article__txt">
-            <h3>b. L'esprit de TCook réside aussi dans son design</h3>
+            <h3 class="h3">b. L'esprit de TCook réside aussi dans son design</h3>
             <p class="important">
               J'ai consacré une attention particulière à l'aspect visuel de l'application, car je crois fermement que la
               cuisine est un art qui doit être apprécié dans tous ses aspects, y compris
@@ -242,7 +219,7 @@
           <img class="recherches__logo" alt="" src="assets/images/logo-marmiton.png">
         </div>
         <div class="article__txt">
-          <h3>c. Études de marché</h3>
+          <h3 class="h3">c. Études de marché</h3>
           <p>
             Les recherches que j'ai entreprises m'ont permis de plonger dans l'univers des applications
             culinaires existantes, telles que <a href="https://www.marmiton.org/" class="texte__lien">Marmitons</a>, <a
@@ -259,13 +236,13 @@
         Fort de toutes ces ressources et de mon expérience, j'ai réfléchi à plusieurs hypothèses pour mon application
         culinaire.
       </p>
-      <h3>Voici quelques hypothèses qui sont ressorties</h3>
+      <h3 class="h3">Voici quelques hypothèses qui sont ressorties</h3>
 
       <div class="hypothese__exemple">
         <div class="recherches__block selectionner" id="selectionner">
           <div class="recherches__numero ">1.</div>
           <div class="recherches__texte">
-            <h3 class="important">
+            <h3 class="h3 important">
               Application de recettes personnalisées&nbsp;:
             </h3>
             <p>
@@ -280,7 +257,7 @@
         <div class="recherches__block">
           <div class="recherches__numero">2.</div>
           <div class="recherches__texte">
-            <h3 class="important">Plateforme de partage de recettes&nbsp;:</h3>
+            <h3 class="h3 important">Plateforme de partage de recettes&nbsp;:</h3>
             <p>
               Une plateforme en ligne où les
               passionnés de cuisine peuvent partager leurs recettes, leurs astuces et leurs expériences culinaires. Les
@@ -293,7 +270,7 @@
         <div class="recherches__block">
           <div class="recherches__numero">3.</div>
           <div class="recherches__texte">
-            <h3 class="important">Service de livraison de repas internationaux&nbsp;:</h3>
+            <h3 class="h3 important">Service de livraison de repas internationaux&nbsp;:</h3>
             <p>
               Un service de livraison de repas qui permet aux utilisateurs de commander des plats authentiques provenant
               de différentes cuisines internationales. Les repas sont préparés par des chefs locaux et livrés
@@ -306,7 +283,7 @@
         <div class="recherches__block">
           <div class="recherches__numero">4.</div>
           <div class="recherches__texte">
-            <h3 class="important">Application de gestion de l'alimentation&nbsp;:</h3>
+            <h3 class="h3 important">Application de gestion de l'alimentation&nbsp;:</h3>
             <p>
               Une application qui aide les utilisateurs à planifier leurs repas, à gérer leurs listes d'achats et à
               suivre
@@ -350,7 +327,7 @@
         continuer d'explorer des moyens novateurs pour faciliter la préparation de repas adaptés aux besoins
         individuels, afin d'améliorer la satisfaction globale des utilisateurs vis-à-vis de la cuisine en général.
       </p>
-      <h3><a href="#selectionner" class="texte__lien">Hypothèse retenue</a></h3>
+      <h3 class="h3"><a href="#selectionner" class="texte__lien">Hypothèse retenue</a></h3>
       <p class="important">Comme vous le constatez, mon hypothèse peut vous rappeler de nombreuses applications
         culinaires existantes sur le marché. Cependant, permettez-moi de vous montrer en quoi TCook se distingue et
         possède sa propre identité unique.
@@ -375,7 +352,7 @@
         </p>
       </div>
 
-      <h4 class="fonction__title">la Substitution d'Ingrédients.</h4>
+      <h4 class="h3 fonction__title">la Substitution d'Ingrédients.</h4>
       <p class="important">
         J'ai imaginé cette fonctionnalité pour rendre votre expérience culinaire encore plus
         flexible et personnalisée.
@@ -425,7 +402,7 @@
     </section>
 
     <section class="section bienvenue">
-      <h3 class="h3 color--alt">
+      <h3 class="red h3">
         Prendre contact :
       </h3>
       <p>

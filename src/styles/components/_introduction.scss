@@ -1,9 +1,21 @@
 .article {
     margin-top: 64px;
-    max-width: 600px;
-    text-align: center;
+    max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
+
+    &__bg::before {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        left: -100px;
+        background-color: $c-other;
+        width: 200%;
+        height: 58em;
+        z-index: -20;
+        transform: rotate(-6deg);
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 12px 24px 12px;
+    }
 
     p {
         margin-left: 16px;
@@ -18,15 +30,25 @@
         object-fit: cover;
         width: 80vw;
         height: calc(80vw / 3 * 2);
-        max-width: 300px;
-        max-height: calc(300px / 3 * 2);
-        margin: 0 auto;
+        max-width: 500px;
+        max-height: calc(500px / 3 * 2);
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 24px 24px 12px;
+        transition: transform 0.3s ease-in-out;
+
+        &:hover {
+            transform: scale(1.1) rotate(6deg);
+            transition: transform 0.3s ease-in-out;
+        }
     }
 
     &__decoration {
         display: none;
     }
 
+}
+
+.decalage {
+    transform: translateX(20px);
 }
 
 .repas {
