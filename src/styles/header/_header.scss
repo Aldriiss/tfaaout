@@ -1,61 +1,140 @@
 header {
   width: 100%;
+  padding: 0 auto;
   position: fixed;
   top: 0;
   z-index: 999;
+}
 
+.nav {
+  background-color: $c-alt;
+  margin-left: auto;
+  margin-right: auto;
+
+  &__size {
+    display: flex;
+    max-width: 1420px;
+    justify-content: space-between;
+  }
+
+  &__img {
+    border-radius: inherit;
+  }
+
+  &__icones {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 3rem;
+    align-items: center;
+    margin: 0;
+    height: 80px;
+    position: relative;
+    z-index: 130;
+    width: 100%;
+  }
+
+  &__menu {
+    background-color: $c-alt;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+    left: 0;
+    top: 0;
+    margin: 0;
+    list-style: none;
+    z-index: -1;
+    transition: transform 0.3s ease-in-out;
+    transform: translateY(-100%);
+  }
+
+  //animation menu
+  .switch {
+    transition: transform 0.5s ease-in-out;
+    transform: translateY(0);
+
+    //animation lien menu
+    .lien {
+      transition: transform 0.7s ease-in-out;
+      transform: translateY(0);
+    }
+  }
+
+  &__last {
+    padding: 0 3rem;
+  }
+
+  &__el {
+    margin-left: 32px;
+    padding: 8px 100px 8px 9px;
+    font-size: 25px;
+    transition-delay: 1s;
+    transition: transform 1s ease-in-out;
+    transform: translateX(0);
+
+    .lien {
+      display: block;
+      padding: 12px 0;
+      transform: translateY(-100%);
+      transition: transform 1s ease-in-out;
+
+      &::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 3px;
+        background-color: $c-bg;
+        transition: width 0.5s ease-in-out;
+      }
+
+      &:hover::after {
+        width: 0;
+      }
+
+      &:hover {
+        color: $c-bg;
+        border-radius: 8px;
+      }
+    }
+  }
+
+  &__img {
+    height: 50px;
+    z-index: 130;
+  }
+}
+
+//Desktop
+@media screen and (min-width:1080px) {
   .nav {
-    background-color: $c-text;
-    margin-left: auto;
-    margin-right: auto;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 12px 24px 12px;
-
-    &__size {
-      display: flex;
-      width: 100%;
-      max-width: 1420px;
-      justify-content: space-between;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    &__img {
-      border-radius: inherit;
-    }
+    display: flex;
+    justify-content: space-between;
 
     &__icones {
-      list-style: none;
-      display: flex;
-      justify-content: space-between;
-      padding: 0 3rem;
-      align-items: center;
-      margin: 0;
-      height: 80px;
-      position: relative;
-      z-index: 130;
-      width: 100%;
+      z-index: 210;
+    }
+
+    &__last {
+      align-self: center;
+      margin-left: 32px;
+      padding: 8px 12px;
     }
 
     &__menu {
-      background-color: $c-text;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      position: fixed;
-      max-width: 1420px;
       width: 100%;
-      height: 100%;
-      margin: 0;
-      list-style: none;
-      z-index: 10;
+      height: 100px;
+      position: static;
       transition: transform 0.5s ease-in-out;
-      transform: translateY(-100%);
-    }
-
-    //animation menu
-    .switch {
-      transition: transform 0.7s ease-in-out;
       transform: translateY(0);
+      flex-direction: row;
+      background-color: initial;
+      z-index: 200;
+      max-width: 1420px;
+
 
       //animation lien menu
       .lien {
@@ -63,87 +142,5 @@ header {
         transform: translateY(0);
       }
     }
-
-    &__last {
-      padding: 0 3rem;
-    }
-
-    &__el {
-      margin-left: 32px;
-      padding: 8px 12px;
-      font-size: 25px;
-      transition-delay: 1s;
-      transition: transform 1s ease-in-out;
-      transform: translateX(0);
-
-      .lien {
-        color: $c-dyna;
-        display: block;
-        padding: 12px 8px;
-        transform: translateY(-200px);
-        transition: transform 1s ease-in-out;
-
-        &::after {
-          content: "";
-          display: block;
-          width: 80%;
-          height: 3px;
-          background-color: $c-dyna;
-          transition: width 0.5s ease-in-out;
-        }
-
-        &:hover {
-          color: $c-bg;
-          border-radius: 8px;
-        }
-
-        &:hover::after {
-          width: 0;
-          background-color: $c-dyna;
-        }
-      }
-    }
-
-    &__img {
-      height: 50px;
-      z-index: 130;
-    }
   }
-
-  //Desktop
-  @media screen and (min-width:1080px) {
-    .nav {
-      display: flex;
-      justify-content: space-between;
-
-      &__icones {
-        z-index: 210;
-      }
-
-      &__last {
-        align-self: center;
-        margin-left: 32px;
-        padding: 8px 12px;
-      }
-
-      &__menu {
-        width: 100%;
-        position: static;
-        transition: transform 0.5s ease-in-out;
-        transform: translateY(0);
-        flex-direction: row;
-        background-color: initial;
-        z-index: 200;
-
-
-
-        //animation lien menu
-        .lien {
-          transition: transform 1s ease-in-out;
-          transform: translateY(0);
-        }
-      }
-    }
-  }
-
 }

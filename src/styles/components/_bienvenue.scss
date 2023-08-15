@@ -1,0 +1,31 @@
+.bienvenue {
+    position: relative;
+
+    &::before {
+        content: "";
+        display: block;
+        width: 180%;
+        height: 110%;
+        rotate: -5deg;
+        background-color: $c-rose;
+        position: absolute;
+        transform: translateY(-10%);
+        top: 20px;
+        left: -150px;
+        z-index: -10;
+    }
+}
+
+@media screen and (min-width:1080px) {
+    .bienvenue {
+        padding: 0 auto;
+
+        h3 {
+            max-width: 40ch;
+        }
+
+        &::before {
+            rotate: 0deg;
+        }
+    }
+}

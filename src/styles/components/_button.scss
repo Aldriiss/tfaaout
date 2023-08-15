@@ -1,17 +1,20 @@
 .button {
     padding: 16px 32px;
-    background-color: $c-text;
-    color: $c-other;
+    background-color: $c-alt;
+    color: white;
     border-radius: 24px;
     cursor: pointer;
-    box-shadow: inset 0px -1px 1px 1px $c-other;
+    transition: all 0.3s ease-in-out;
 
     &:hover,
     &:active,
     &:focus {
-        color: $c-btn;
-        box-shadow: inset 0px -1px 1px 1px $c-btn;
+        transition: all 0.3s ease-in-out;
+        background-color: $c-bg;
+        color: $c-alt;
+        box-shadow: inset 0px 0px 0px 3px $c-alt;
     }
+
 }
 
 

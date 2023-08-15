@@ -1,10 +1,9 @@
 .footer {
-    background-color: $c-dyna;
+    background-color: $c-alt;
     height: fit-content;
     width: 100%;
-    position: absolute;
-    left: 0;
-    padding-top: 28.4px;
+    padding-top: 28px;
+    padding-bottom: 14px;
     color: $c-bg;
 
     &__nav {
@@ -15,10 +14,7 @@
         max-width: 1420px;
         align-items: center;
         margin: auto auto;
-    }
-
-    &__el {
-        padding: 8px 0;
+        padding: 0;
     }
 
     .lien {
@@ -27,32 +23,28 @@
         color: inherit;
         text-decoration: none;
         transition: all 0.5s ease-in-out;
+        padding: 8px;
 
         &::after {
             content: "";
             display: block;
-            width: 100%;
+            width: 0;
             height: 3px;
-            background-color: $c-dyna;
+            background-color: $c-alt;
             transition: all 0.5s ease-in-out;
         }
 
         &:hover::after {
-            width: 0;
+            width: 100%;
         }
 
         &:hover {
-            color: $c-dyna;
+            color: $c-alt;
             background-color: $c-bg;
             transition: all 0.5s ease-in-out;
         }
     }
 
-}
-
-.ancre--top {
-    position: absolute;
-    top: 0;
 }
 
 //tablette

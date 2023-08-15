@@ -1,17 +1,16 @@
-$c-bg: #B5C99A;
-$c-hover: #576443;
-$c-text: #fcfcfc;
-$c-dyna: #354123;
-$c-other: #862B0D;
-$c-btn: #381307;
+$c-bg: #fcfcfc;
+$c-alt: #750D37;
+$c-hover: #a01d51;
+$c-text: #252525;
+$c-dyna: #476061;
+$c-rose: #f5c0c0;
 
-
-$size-title-h1: 76px;
-$size-title-h2: 32px;
+$size-title-h1: 7rem;
+$size-title-h2: 2rem;
 $size-title-h3: 24px;
 $size-title-h4: 20px;
 $line-height: 1.333;
-$size-text: 18px;
+$size-text: 20px;
 
 :root {
     --size-tittle-h1: #{$size-title-h1};
@@ -23,12 +22,12 @@ $size-text: 18px;
 
     //tablette
     @media screen and (min-width:720px) and (max-width:1080px) {
-        --size-tittle-h1: 80px;
+        --size-tittle-h1: 120px;
         --size-tittle-h2: 40px;
         --size-tittle-h3: 28px;
         --size-tittle-h4: 24px;
         --line-height: 1.414;
-        --size-text: 20px;
+        --size-text: 22px;
     }
 
     //Desktop
@@ -38,6 +37,6 @@ $size-text: 18px;
         --size-tittle-h3: 33px;
         --size-tittle-h4: 27px;
         --line-height: 1.5;
-        --size-text: 22px;
+        --size-text: 24px;
     }
 }
