@@ -1,23 +1,7 @@
 .block--pink {
-    &::before {
-        content: "";
-        display: block;
-        width: 180%;
-        height: 110%;
-        rotate: -5deg;
-        background-color: $c-rose;
-        position: absolute;
-        transform: translateY(-10%);
-        top: 20px;
-        left: -150px;
-        z-index: -10;
-    }
+    margin: 80px 0;
+    padding: 40px 12px;
+    background-color: $c-rose;
 }
 
-@media screen and (min-width:1080px) {
-    .block--pink {
-        &::before {
-            rotate: 0deg;
-        }
-    }
-}
+@media screen and (min-width:1080px) {}
