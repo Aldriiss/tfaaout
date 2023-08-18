@@ -1,0 +1,22 @@
+.chef {
+    height: 300px;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: none;
+}
+
+.casserole {
+    rotate: -10deg;
+}
+
+.grid {
+    display: grid;
+}
+
+//Desktop
+@media screen and (min-width:1080px) {
+    .grid {
+        grid-template-columns: 3fr 1fr;
+    }
+}

@@ -37,6 +37,7 @@ main {
 .h3 {
   font-size: var(--size-tittle-h3);
   margin-top: 12px;
+  color: $c-dyna;
 }
 
 //h4
@@ -58,7 +59,11 @@ main {
 }
 
 p {
-  max-width: 60ch;
+  max-width: 80ch;
+}
+
+.nosize__limite {
+  max-width: inherit;
 }
 
 //style lien
@@ -90,7 +95,6 @@ p {
     color: $c-alt;
   }
 }
-
 
 .section {
   padding: 64px 32px;

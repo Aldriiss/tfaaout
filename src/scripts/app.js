@@ -287,7 +287,7 @@ let menu = document.querySelectorAll("header nav a");
 window.onscroll = () => {
   section.forEach((i) => {
     let top = window.scrollY;
-    let offset = i.offsetTop - 150;
+    let offset = i.offsetTop - 200;
     let height = i.offsetHeight;
     let id = i.getAttribute("id");
 
@@ -308,7 +308,7 @@ function reveal() {
   for (var i = 0; i < reveals.length; i++) {
     var windowHeight = window.innerHeight;
     var elementTop = reveals[i].getBoundingClientRect().top;
-    var elementVisible = 150;
+    var elementVisible = 200;
 
     if (elementTop < windowHeight - elementVisible) {
       reveals[i].classList.add("active");

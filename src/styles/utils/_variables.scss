@@ -5,10 +5,10 @@ $c-text: #252525;
 $c-dyna: #476061;
 $c-rose: #f5c0c0;
 
-$size-title-h1: 7rem;
-$size-title-h2: 2rem;
-$size-title-h3: 24px;
-$size-title-h4: 20px;
+$size-title-h1: 112px;
+$size-title-h2: 63px;
+$size-title-h3: 36px;
+$size-title-h4: 27px;
 $line-height: 1.333;
 $size-text: 20px;
 
@@ -32,11 +32,11 @@ $size-text: 20px;
 
     //Desktop
     @media screen and (min-width:1080px) {
-        --size-tittle-h1: 111px;
-        --size-tittle-h2: 50px;
-        --size-tittle-h3: 33px;
-        --size-tittle-h4: 27px;
-        --line-height: 1.5;
+        --size-tittle-h1: 182px;
+        --size-tittle-h2: 81px;
+        --size-tittle-h3: 48px;
+        --size-tittle-h4: 34px;
+        --line-height: 1.414;
         --size-text: 24px;
     }
 }
